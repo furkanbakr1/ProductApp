@@ -22,7 +22,7 @@ ProductApp, ASP.NET Core MVC teknolojisiyle geliştirilmiş, JWT destekli, çok 
 
 ---
 
-## 🛠️ Teknolojiler
+##  Teknolojiler
 
 - ASP.NET Core MVC (.NET 8)
 - Entity Framework Core
