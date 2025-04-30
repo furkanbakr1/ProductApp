@@ -1,10 +1,10 @@
-# 🛍️ ProductApp - ASP.NET Core MVC ile Ürün Yönetim Sistemi
+# ProductApp - ASP.NET Core MVC ile Ürün Yönetim Sistemi
 
 ProductApp, ASP.NET Core MVC teknolojisiyle geliştirilmiş, JWT destekli, çok katmanlı mimariye sahip örnek bir ürün yönetim sistemidir. Admin paneli, rol yönetimi, kullanıcı yönetimi, API endpoint'leri ve bootstrap ile responsive bir arayüze sahiptir.
 
 ---
 
-## 🚀 Özellikler
+## Özellikler
 
 - Kullanıcı Kayıt / Giriş Sistemi (ASP.NET Identity)
 - JWT ile API Güvenliği
@@ -34,7 +34,7 @@ ProductApp, ASP.NET Core MVC teknolojisiyle geliştirilmiş, JWT destekli, çok 
 
 ---
 
-## 📂 Katman Yapısı
+##  Katman Yapısı
 
 ProductApp/ │ ├── ProductApp.Entities → Entity sınıfları ├── ProductApp.DataAccess → DbContext & Repositories ├── ProductApp.Business → Servisler (Business Logic) ├── ProductApp.Web → Web projesi (MVC + Razor + API) │ ├── Areas/Admin → Yönetim Paneli │ └── Controllers → Ürün ve API controller'ları
 E-posta : admin@admin.com
@@ -44,7 +44,7 @@ E-posta : admin@admin.com
 
 ---
 
-## 🔧 Kurulum
+##  Kurulum
 
 ```bash
 git clone https://github.com/furkanbakr1/ProductApp.git
