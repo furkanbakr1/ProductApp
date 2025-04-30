@@ -1,0 +1,55 @@
+﻿@model IEnumerable<Microsoft.AspNetCore.Identity.IdentityRole>
+
+@{
+    ViewData["Title"] = "Rol Listesi";
+    Layout = "_Layout";
+}
+
+<h2 class="my-4">📋 Rol Listesi</h2>
+
+@if (TempData["Success"] != null)
+{
+    <div class="alert alert-success">@TempData["Success"]</div>
+}
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger">@TempData["Error"]</div>
+}
+
+<table class="table table-bordered shadow-sm">
+    <thead class="table-dark">
+        <tr>
+            <th>#</th>
+            <th>Rol Adı</th>
+            <th>İşlem</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var role in Model.Select((r, i) => new { r, i }))
+        {
+            <tr>
+                <td>@(role.i + 1)</td>
+                <td>@role.r.Name</td>
+                <td>
+                    <a href="/Admin/User/EditRole/@role.r.Id" class="btn btn-sm btn-outline-warning me-2">
+                        <i class="bi bi-pencil-square"></i> Güncelle
+                    </a>
+
+                    <form action="/Admin/User/DeleteRole" method="post" class="d-inline">
+                        <input type="hidden" name="id" value="@role.r.Id" />
+                        @Html.AntiForgeryToken()
+                        <button type="submit" class="btn btn-sm btn-outline-danger" onclick="return confirm('Bu rolü silmek istediğinizden emin misiniz?')">
+                            <i class="bi bi-trash3-fill"></i> Sil
+                        </button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div class="mt-3">
+    <a href="/Admin/User/CreateRole" class="btn btn-primary">
+        <i class="bi bi-plus-circle"></i> Yeni Rol Ekle
+    </a>
+</div>

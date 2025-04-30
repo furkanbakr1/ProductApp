@@ -1,0 +1,11 @@
+C:\Users\Snopy2\Desktop\ProductApp\ProductApp.Entities\bin\Debug\net8.0\ProductApp.Entities.deps.json
+C:\Users\Snopy2\Desktop\ProductApp\ProductApp.Entities\bin\Debug\net8.0\ProductApp.Entities.dll
+C:\Users\Snopy2\Desktop\ProductApp\ProductApp.Entities\bin\Debug\net8.0\ProductApp.Entities.pdb
+C:\Users\Snopy2\Desktop\ProductApp\ProductApp.Entities\obj\Debug\net8.0\ProductApp.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Snopy2\Desktop\ProductApp\ProductApp.Entities\obj\Debug\net8.0\ProductApp.Entities.AssemblyInfoInputs.cache
+C:\Users\Snopy2\Desktop\ProductApp\ProductApp.Entities\obj\Debug\net8.0\ProductApp.Entities.AssemblyInfo.cs
+C:\Users\Snopy2\Desktop\ProductApp\ProductApp.Entities\obj\Debug\net8.0\ProductApp.Entities.csproj.CoreCompileInputs.cache
+C:\Users\Snopy2\Desktop\ProductApp\ProductApp.Entities\obj\Debug\net8.0\ProductApp.Entities.dll
+C:\Users\Snopy2\Desktop\ProductApp\ProductApp.Entities\obj\Debug\net8.0\refint\ProductApp.Entities.dll
+C:\Users\Snopy2\Desktop\ProductApp\ProductApp.Entities\obj\Debug\net8.0\ProductApp.Entities.pdb
+C:\Users\Snopy2\Desktop\ProductApp\ProductApp.Entities\obj\Debug\net8.0\ref\ProductApp.Entities.dll

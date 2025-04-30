@@ -1,0 +1,27 @@
+﻿@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+
+@model ProductApp.Web.Models.ProductDto
+
+<div class="container mt-5">
+    <h2 class="text-primary mb-4">Yeni Ürün Ekle</h2>
+
+    <form asp-action="Create" method="post" class="card p-4 shadow-sm">
+        <div class="mb-3">
+            <label asp-for="Name" class="form-label">Ürün İsmi</label>
+            <input asp-for="Name" class="form-control" placeholder="ürün ismi gir" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Price" class="form-label">Ürün Fiyatı (₺)</label>
+            <input asp-for="Price" class="form-control" placeholder="Eürüne iyat girr" />
+            <span asp-validation-for="Price" class="text-danger"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100">
+            <i class="bi bi-save"></i> Save Product
+        </button>
+    </form>
+</div>

@@ -1,0 +1,17 @@
+C:\Users\Snopy2\Desktop\ProductApp\ProductApp.DataAccess\bin\Debug\net8.0\ProductApp.DataAccess.deps.json
+C:\Users\Snopy2\Desktop\ProductApp\ProductApp.DataAccess\bin\Debug\net8.0\ProductApp.DataAccess.runtimeconfig.json
+C:\Users\Snopy2\Desktop\ProductApp\ProductApp.DataAccess\bin\Debug\net8.0\ProductApp.DataAccess.dll
+C:\Users\Snopy2\Desktop\ProductApp\ProductApp.DataAccess\bin\Debug\net8.0\ProductApp.DataAccess.pdb
+C:\Users\Snopy2\Desktop\ProductApp\ProductApp.DataAccess\bin\Debug\net8.0\ProductApp.Entities.dll
+C:\Users\Snopy2\Desktop\ProductApp\ProductApp.DataAccess\bin\Debug\net8.0\ProductApp.Entities.pdb
+C:\Users\Snopy2\Desktop\ProductApp\ProductApp.DataAccess\obj\Debug\net8.0\ProductApp.DataAccess.csproj.AssemblyReference.cache
+C:\Users\Snopy2\Desktop\ProductApp\ProductApp.DataAccess\obj\Debug\net8.0\ProductApp.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Snopy2\Desktop\ProductApp\ProductApp.DataAccess\obj\Debug\net8.0\ProductApp.DataAccess.AssemblyInfoInputs.cache
+C:\Users\Snopy2\Desktop\ProductApp\ProductApp.DataAccess\obj\Debug\net8.0\ProductApp.DataAccess.AssemblyInfo.cs
+C:\Users\Snopy2\Desktop\ProductApp\ProductApp.DataAccess\obj\Debug\net8.0\ProductApp.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Snopy2\Desktop\ProductApp\ProductApp.DataAccess\obj\Debug\net8.0\ProductA.B76134FE.Up2Date
+C:\Users\Snopy2\Desktop\ProductApp\ProductApp.DataAccess\obj\Debug\net8.0\ProductApp.DataAccess.dll
+C:\Users\Snopy2\Desktop\ProductApp\ProductApp.DataAccess\obj\Debug\net8.0\refint\ProductApp.DataAccess.dll
+C:\Users\Snopy2\Desktop\ProductApp\ProductApp.DataAccess\obj\Debug\net8.0\ProductApp.DataAccess.pdb
+C:\Users\Snopy2\Desktop\ProductApp\ProductApp.DataAccess\obj\Debug\net8.0\ProductApp.DataAccess.genruntimeconfig.cache
+C:\Users\Snopy2\Desktop\ProductApp\ProductApp.DataAccess\obj\Debug\net8.0\ref\ProductApp.DataAccess.dll

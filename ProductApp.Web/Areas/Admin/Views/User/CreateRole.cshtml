@@ -1,0 +1,39 @@
+﻿@model ProductApp.Web.Models.CreateRoleViewModel
+
+@{
+    ViewData["Title"] = "Yeni Rol Ekle";
+    Layout = "_Layout";
+}
+
+<div class="container mt-5">
+    <div class="card shadow-sm border-0">
+        <div class="card-header bg-primary text-white">
+            <h5 class="mb-0">➕ Yeni Rol Oluştur</h5>
+        </div>
+        <div class="card-body">
+            <form action="/Admin/User/CreateRole" method="post">
+                @Html.AntiForgeryToken()
+                <div class="mb-3">
+                    <label for="RoleName" class="form-label fw-bold">Rol Adı</label>
+                    <input type="text" id="RoleName" name="RoleName" class="form-control" placeholder="örn. Admin, Editor" />
+                    <span class="text-danger field-validation-valid" data-valmsg-for="RoleName" data-valmsg-replace="true"></span>
+                </div>
+
+                <div class="d-flex justify-content-between">
+                 <a href="User/RoleList">
+                    <button type="submit" class="btn btn-success">
+                        <i class="bi bi-plus-circle-fill"></i> Oluştur
+                    </button>
+                    </a>
+                    <a href="/Admin/User/RoleList" class="btn btn-secondary">
+                        <i class="bi bi-arrow-left-circle"></i> Geri Dön
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

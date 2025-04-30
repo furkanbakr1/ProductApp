@@ -1,0 +1,27 @@
+﻿@model ProductApp.Web.Models.UserRolesViewModel
+
+@{
+    ViewData["Title"] = "Rol Yönetimi";
+    Layout = "_Layout";
+}
+
+<h2>Rolleri Düzenle - @Model.Email</h2>
+
+<form action="/Admin/User/UpdateRoles" method="post">
+    <input type="hidden" name="UserId" value="@Model.UserId" />
+    @Html.AntiForgeryToken()
+
+    <div class="mb-3">
+        @foreach (var role in Model.AllRoles)
+        {
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="UserRoles" value="@role"
+                @(Model.UserRoles.Contains(role) ? "checked" : "") />
+                <label class="form-check-label">@role</label>
+            </div>
+        }
+    </div>
+
+    <button type="submit" class="btn btn-success">Kaydet</button>
+    <a href="/Admin/User" class="btn btn-secondary">Geri Dön</a>
+</form>

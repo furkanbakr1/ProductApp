@@ -1,0 +1,35 @@
+﻿@model Microsoft.AspNetCore.Identity.IdentityRole
+
+@{
+    ViewData["Title"] = "Rol Güncelle";
+    Layout = "_Layout";
+}
+
+<div class="container mt-4">
+    <div class="card shadow-sm">
+        <div class="card-header bg-warning text-dark fw-bold">
+            <i class="bi bi-pencil-square"></i> Rol Güncelle
+        </div>
+        <div class="card-body">
+            <form action="/Admin/User/EditRole" method="post">
+                @Html.AntiForgeryToken()
+                <input type="hidden" name="Id" value="@Model.Id" />
+
+                <div class="mb-3">
+                    <label for="Name" class="form-label">Yeni Rol Adı</label>
+                    <input type="text" id="Name" name="Name" class="form-control" value="@Model.Name" />
+                    <span class="text-danger field-validation-valid" data-valmsg-for="Name" data-valmsg-replace="true"></span>
+                </div>
+
+                <div class="d-flex justify-content-between">
+                    <button type="submit" class="btn btn-success">Kaydet</button>
+                    <a href="/Admin/User/RoleList" class="btn btn-secondary">Geri Dön</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -1,0 +1,71 @@
+﻿@model ProductApp.Web.Models.ProductListViewModel
+
+
+<form class="d-flex mb-3" method="get" action="/Product/Index">
+    <input type="text" name="searchTerm" class="form-control me-2" placeholder="Search by product name..." value="@ViewBag.SearchTerm" />
+    <button type="submit" class="btn btn-outline-primary">
+        <i class="bi bi-search"></i> ARA
+    </button>
+</form>
+
+
+<div class="container mt-5">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="text-primary">Ürün Listesi</h2>
+        <a href="/Product/Create" class="btn btn-success">
+            + Yeni Ürün Ekle
+        </a>
+    </div>
+
+        <table class="table table-striped">
+            <thead class="table-dark">
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Price ($)</th>
+                    <th>Operations</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.Products)
+                {
+                    <tr>
+                        <td>@item.Id</td>
+                        <td>@item.Name</td>
+                        <td>@item.Price.ToString("0.00")</td>
+                        <td>
+                        <a href="/Product/Delete/@item.Id" class="btn btn-danger btn-sm"> <i class="bi bi-trash">  Delete</i></a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+</div>
+
+<div class="d-flex justify-content-center mt-4">
+    <nav>
+        <ul class="pagination">
+
+            <a class="page-link" href="/Product/Index?page=@(Model.PageInfo.CurrentPage - 1)&searchTerm=@ViewBag.SearchTerm">
+                <i class="bi bi-chevron-left"></i>
+            </a>
+
+           
+            @for (int i = 1; i <= Model.PageInfo.TotalPages; i++)
+            {
+                <li class="page-item @(Model.PageInfo.CurrentPage == i ? "active" : "")">
+                    <a class="page-link" href="/Product/Index?page=@i&searchTerm=@ViewBag.SearchTerm">@i</a>
+                </li>
+            }
+
+
+            <a class="page-link" href="/Product/Index?page=@(Model.PageInfo.CurrentPage + 1)&searchTerm=@ViewBag.SearchTerm">
+                <i class="bi bi-chevron-right"></i>
+            </a>
+
+
+        </ul>
+    </nav>
+</div>
+
+
